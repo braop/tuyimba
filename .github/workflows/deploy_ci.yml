@@ -52,8 +52,6 @@ jobs:
           packageName: ug.isoftware.tuyimba
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: release
-          status: completed
-
 #          whatsNewDirectory: whatsnew/
 
 #      - name: Notify on Slack
