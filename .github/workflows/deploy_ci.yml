@@ -32,7 +32,7 @@ jobs:
 
       - name: Sign AAB
         id: sign
-        uses: r0adkll/sign-android-release@v1
+        uses: braop/tuyimba@v1
         with:
           releaseDirectory: app/build/outputs/bundle/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
@@ -45,8 +45,8 @@ jobs:
         run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
 
       - name: Deploy to Play Store (BETA)
-        id: deployk
-        uses: braop/upload-google-play@v1
+        id: deploy
+        uses: braop/tuyimba@v1
         with:
           serviceAccountJson: service_account.json
           packageName: com.package
