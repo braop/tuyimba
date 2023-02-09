@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">tuyimba</string>
+    <string name="testing_github_actions">Testing Github Actions</string>
 </resources>
