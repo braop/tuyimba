@@ -32,7 +32,7 @@ jobs:
 
       - name: Sign AAB
         id: sign
-        uses: marvinpinto/action-automatic-releases@latest
+        uses: braop/sign-android-release@v1
         with:
           releaseDirectory: app/build/outputs/bundle/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
@@ -46,10 +46,10 @@ jobs:
 
       - name: Deploy to Play Store (BETA)
         id: deploy
-        uses: marvinpinto/action-automatic-releases@latest
+        uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: service_account.json
-          packageName: com.package
+          packageName: ug.isoftware.tuyimba
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: beta
 #          whatsNewDirectory: whatsnew/
