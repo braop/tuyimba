@@ -32,7 +32,7 @@ jobs:
 
       - name: Sign AAB
         id: sign
-        uses: braop/sign-android-release@v1
+        uses: r0adkll/sign-android-release@v1
         with:
           releaseDirectory: app/build/outputs/bundle/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
@@ -49,7 +49,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: service_account.json
-          packageName: ug.isoftware.tuyimba
+          packageName: ug.isoftware.tuyimbak
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: beta
 #          whatsNewDirectory: whatsnew/
