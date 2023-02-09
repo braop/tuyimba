@@ -51,7 +51,7 @@ jobs:
           serviceAccountJson: service_account.json
           packageName: ug.isoftware.tuyimba
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
-          track: release
+          track: beta
 #          whatsNewDirectory: whatsnew/
 
 #      - name: Notify on Slack
