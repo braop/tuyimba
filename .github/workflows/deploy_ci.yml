@@ -53,6 +53,7 @@ jobs:
           releaseFiles: app/build/outputs/bundle/release/app-release.aab
           track: alpha
           status: completed
+
 #          whatsNewDirectory: whatsnew/
 
 #      - name: Notify on Slack
